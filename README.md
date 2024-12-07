@@ -88,7 +88,7 @@ content = '''
 </body>
 </html>
 
-'''
+
 
 
 class Myserver(BaseHTTPRequestHandler):
@@ -102,7 +102,10 @@ class Myserver(BaseHTTPRequestHandler):
 print("This is my webserver")
 server_address = ('',8000)
 httpd = HTTPServer(server_address,Myserver)
+```
 
+
+```
 2.urls.py
 
 from django.contrib import admin
@@ -113,9 +116,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 httpd.serve_forever()
+```
 
 # OUTPUT:
-```
+
 
 ![Screenshot 2024-11-30 140941](https://github.com/user-attachments/assets/6fd9edb5-4b07-443a-9c10-232120267cf2)
 ![Screenshot (17)](https://github.com/user-attachments/assets/6e1fff75-62a8-472b-97bc-b7026c1219a3)
